@@ -12,7 +12,7 @@ function fetchDog() {
   });
 }
 
-function workerSaga() {
+function* workerSaga() {
   try {
     const response = yield call(fetchDog);
     const dog = response.data.message;
